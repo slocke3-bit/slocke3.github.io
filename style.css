@@ -154,7 +154,10 @@ body {
 .hero {
     min-height: 340px;
     border-bottom: 4px solid var(--border);
-    background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -423,4 +426,173 @@ body {
     .site-footer {
         flex-direction: column;
     }
+}
+
+/* INNER PAGES */
+.page-hero {
+    min-height: 220px;
+    border-bottom: 4px solid var(--border);
+    background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
+    color: white;
+    text-align: center;
+    padding: 50px 25px;
+}
+
+.page-hero h2 {
+    font-size: 2.7rem;
+    margin-bottom: 12px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35);
+}
+
+.page-hero p {
+    font-size: 1.15rem;
+}
+
+.page-content {
+    padding: 24px;
+    background-color: #fffaf5;
+    border-bottom: 4px solid var(--border);
+}
+
+.intro-section {
+    border: 3px solid var(--border);
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 22px;
+}
+
+.intro-section h3,
+.package-section h3 {
+    color: var(--text);
+    font-size: 1.8rem;
+    border-bottom: 3px solid var(--primary);
+    padding-bottom: 6px;
+    margin-bottom: 14px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 24px;
+}
+
+.service-card {
+    border: 3px solid var(--border);
+    background-color: #f9f3ff;
+    padding: 20px;
+}
+
+.service-card h3 {
+    color: var(--text);
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 5px;
+}
+
+.package-section {
+    border: 3px solid var(--border);
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 24px;
+}
+
+/* SERVICES TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+
+th {
+    background-color: var(--primary);
+    color: var(--dark);
+}
+
+th,
+td {
+    border: 2px solid var(--border);
+    padding: 12px;
+    text-align: left;
+}
+
+tr:nth-of-type(even) {
+    background-color: #f9f3ff;
+}
+
+/* BOOKING FORM */
+.booking-form {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 16px;
+    border: 3px solid var(--border);
+    background-color: white;
+    padding: 24px;
+    max-width: 800px;
+}
+
+.booking-form label {
+    font-weight: bold;
+    color: var(--text);
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    padding: 10px;
+    border: 2px solid var(--border);
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.booking-form input[type="submit"] {
+    grid-column: 2;
+    width: 170px;
+    background-color: var(--secondary);
+    color: white;
+    font-weight: bold;
+    border: 2px solid var(--secondary);
+    cursor: pointer;
+}
+
+.booking-form input[type="submit"]:hover {
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+
+/* INNER PAGE RESPONSIVE */
+@media (max-width: 900px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-form {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-form input[type="submit"] {
+        grid-column: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .page-hero h2 {
+        font-size: 2rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+}
+
+.content-image-box img,
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
