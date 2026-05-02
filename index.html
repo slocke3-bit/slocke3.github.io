@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ultrasound Entertainment</title>
+    <title>UltraSound Entertainment</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,11 +13,11 @@
 
         <header class="site-header">
             <div class="logo-area">
-                <img src="logo.jpg" alt="Ultrasound Entertainment logo">
+                <img src="images/logo.jpg" alt="UltraSound Entertainment logo">
             </div>
 
             <div class="brand-area">
-                <h1>Ultrasound Entertainment</h1>
+                <h1>UltraSound Entertainment</h1>
                 <p>Music for the Masses</p>
             </div>
 
@@ -32,13 +32,14 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="gallery.html">Gallery & Reviews</a></li>
                 <li><a href="booking.html">Booking</a></li>
             </ul>
 
-            <div class="search-area">
-                <span>Search</span>
-            </div>
+            <form class="search-area" action="#">
+                <label for="site-search" class="visually-hidden">Search</label>
+                <input type="search" id="site-search" name="site-search" placeholder="Search">
+            </form>
         </nav>
 
         <section class="hero">
@@ -54,13 +55,13 @@
         <div class="content-layout">
             <main class="main-content">
                 <div class="content-image-box">
-                    <img src="dj3.jpg" alt="DJ Riqueallen performing at an event">
+                    <img src="images/dj3.jpg" alt="DJ Riqueallen performing at an event">
                 </div>
 
                 <h3>Professional DJ Services</h3>
 
                 <p>
-                    Ultrasound Entertainment provides professional DJ services designed
+                    UltraSound Entertainment provides professional DJ services designed
                     to keep your guests engaged and your event running smoothly.
                     From elegant weddings to high-energy parties, we create the right
                     vibe for every occasion.
@@ -76,15 +77,18 @@
                 <h3>Sidebar</h3>
 
                 <div class="video-box">
-                    <span>Video</span>
+                    <div class="video-content">
+                        <h4>Event Preview</h4>
+                        <p>Watch a short clip of DJ Riqueallen bringing music, energy, and entertainment to a live
+                            event.</p>
+
+                        <video controls width="100%">
+                            <source src="Images/dj-video.mp4.mov" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
 
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#">Weddings</a></li>
-                    <li><a href="#">Parties</a></li>
-                    <li><a href="#">Corporate</a></li>
-                </ul>
             </aside>
         </div>
 
@@ -93,23 +97,23 @@
 
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="thecave.jpg" alt="Corporate event">
+                    <img src="images/thecave.jpg" alt="Corporate event">
                 </div>
                 <div class="gallery-item">
-                    <img src="fundraiser1.jpg" alt="Fundrasing event">
+                    <img src="images/fundraiser1.jpg" alt="Fundrasing event">
                 </div>
                 <div class="gallery-item">
-                    <img src="setup.jpg" alt="DJ equipment and lighting">
+                    <img src="images/setup.jpg" alt="DJ equipment and lighting">
                 </div>
                 <div class="gallery-item">
-                    <img src="wedding1.jpg" alt="Wedding reception">
+                    <img src="images/wedding1.jpg" alt="Wedding reception">
                 </div>
             </div>
         </section>
 
         <footer class="site-footer">
-            <a href="#">Home</a>
-            <a href="#">Contact Info</a>
+            <a href="index.html">Home</a>
+            <a href="https://www.theknot.com/" target="_blank">Event Planning Resource</a>
             <a href="#">Copyright</a>
         </footer>
 
