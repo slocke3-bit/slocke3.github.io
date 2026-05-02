@@ -154,7 +154,7 @@ body {
 .hero {
     min-height: 340px;
     border-bottom: 4px solid var(--border);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("images/hero.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("hero.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
